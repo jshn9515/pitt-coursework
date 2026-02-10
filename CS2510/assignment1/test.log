@@ -1,0 +1,32 @@
+2026-02-09 22:42:50 [INFO] ===== Running Test 1 =====
+2026-02-09 22:42:50 [INFO] [TEST1] Starting server...
+2026-02-09 22:42:51 [INFO] [SERVER] Started on port 9000 with clients [1, 2, 3].
+2026-02-09 22:42:53 [INFO] [TEST1] Starting Alice (Client 1)...
+2026-02-09 22:42:54 [INFO] [SERVER] Client 1 connected.
+2026-02-09 22:42:55 [INFO] [SERVER] Client 1: Hello from Alice
+2026-02-09 22:43:00 [INFO] [TEST1] Starting Bob (Client 2)...
+2026-02-09 22:43:01 [INFO] [SERVER] Client 2 connected.
+2026-02-09 22:43:01 [INFO] [CLIENT2] From client 1: Hello from Alice
+2026-02-09 22:43:02 [INFO] [TEST1] Starting Chad (Client 3)...
+2026-02-09 22:43:03 [INFO] [SERVER] Client 3 connected.
+2026-02-09 22:43:03 [INFO] [CLIENT3] From client 1: Hello from Alice
+2026-02-09 22:43:05 [INFO] [TEST1] Test1 finished.
+2026-02-09 22:43:07 [INFO] ===== Running Test 2 =====
+2026-02-09 22:43:08 [INFO] [TEST2] Starting server...
+2026-02-09 22:43:08 [INFO] [SERVER] Started on port 9000 with clients [1, 2, 3].
+2026-02-09 22:43:10 [INFO] [TEST2] Starting Alice (Client 1)...
+2026-02-09 22:43:10 [INFO] [SERVER] Client 1 connected.
+2026-02-09 22:43:11 [INFO] [TEST2] Starting Bob (Client 2)...
+2026-02-09 22:43:11 [INFO] [SERVER] Client 2 connected.
+2026-02-09 22:43:12 [INFO] [TEST2] Starting Chad (Client 3)...
+2026-02-09 22:43:12 [INFO] [SERVER] Client 3 connected.
+2026-02-09 22:43:14 [INFO] [SERVER] Client 2: Hello from Bob
+2026-02-09 22:43:14 [INFO] [CLIENT1] From client 2: Hello from Bob
+2026-02-09 22:43:14 [INFO] [CLIENT3] From client 2: Hello from Bob
+2026-02-09 22:43:16 [INFO] [SERVER] Client 1: Hello from Alice
+2026-02-09 22:43:16 [INFO] [CLIENT2] From client 1: Hello from Alice
+2026-02-09 22:43:18 [INFO] [TEST2] Starting Doug (Client 4)...
+2026-02-09 22:43:18 [WARNING] [SERVER] Connection attempt from unauthorized client 4.
+2026-02-09 22:43:18 [WARNING] [CLIENT4] RPC failed: PERMISSION_DENIED: Client 4 not in allowed client group.
+2026-02-09 22:43:21 [INFO] [TEST2] Test2 finished.
+2026-02-09 22:43:21 [INFO] ===== All tests finished =====
