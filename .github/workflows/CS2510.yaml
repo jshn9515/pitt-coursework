@@ -1,0 +1,19 @@
+name: CS2510 Docker Build and Test
+
+on:
+  push:
+    paths:
+      - "CS2510/**"
+  workflow_dispatch:
+
+jobs:
+  cs2510:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build HW1 image
+        run: docker build -t cs2510-hw1 ./CS2510/assignment1
+
+      - name: Run HW1 tests
+        run: docker run --rm cs2510-hw1
