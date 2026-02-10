@@ -5,3 +5,4 @@ This repository contains the coursework for the University of Pittsburgh. It inc
 ## Courses
 
 - CS2510: Distributed Systems
+- CS2770: Computer Vision
